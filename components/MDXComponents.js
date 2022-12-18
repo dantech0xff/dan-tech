@@ -1,10 +1,11 @@
 import { useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
+import { BlogNewsletterForm } from "./NewsletterForm";
+
 import ImageWrapper from "./ImageWrapper";
 import LinkWrapper from "./LinkWrapper";
 import TOCInline from "./TOCInline";
 import Pre from "./Pre";
-import { BlogNewsletterForm } from "./NewsletterForm";
 
 export const MDXComponents = {
   ImageWrapper,
