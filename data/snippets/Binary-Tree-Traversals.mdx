@@ -1,0 +1,41 @@
+---
+title: Binary Tree Traversals
+date: '2022-11-20'
+tags: [LeetCode, DSA, Binary Tree]
+draft: false
+summary: Snippet for Binary Tree Traversals
+images: []
+layout: PostSimple
+---
+
+### Time Complexity: O(n)
+
+### n = size(tree)
+
+```Python showLineNumbers
+def dfs(root: TreeNode):
+    if (root is None): return
+    # what I'm doing here ¯\_(ツ)_/¯
+    print(root.val)
+    dfs(root.left)
+    dfs(root.right)
+```
+
+```Python showLineNumbers
+def bfs(root: TreeNode) -> None:
+    if not root: return
+    q = deque([root])
+
+    while q:
+        size = len(q)
+        for i in range(size):
+            node = q.popleft()
+            # what I'm doing here ¯\_(ツ)_/¯
+            print(str(node.val), end = " ")
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+        print()
+```

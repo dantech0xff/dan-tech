@@ -25,7 +25,7 @@ const ScrollTop = () => {
         aria-label="Scroll To Top"
         type="button"
         onClick={handleScrollTop}
-        classsName="pushable"
+        className="pushable"
       >
         <span className="shadow"></span>
         <span className="edge"></span>

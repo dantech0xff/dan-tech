@@ -1,0 +1,28 @@
+---
+title: Binary Search
+date: '2022-11-20'
+tags: [LeetCode, DSA, Array]
+draft: false
+summary: Snippet for binary search
+images: []
+layout: PostSimple
+---
+
+### Time Complexity: O(log n)
+
+### n = len(array)
+
+```Python showLineNumbers
+# array sorted in ASC
+# If the target exists, returns its leftmost index.
+# Else, returns the index of where it should be.
+def binarySearch(array, target):
+    l, r = 0, len(array)
+    while l < r :
+        m = (l + r) // 2
+        if array[m] < target:
+            l = m + 1
+        else:
+            r = m
+    return l
+```

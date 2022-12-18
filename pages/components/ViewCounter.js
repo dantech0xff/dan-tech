@@ -19,8 +19,8 @@ export default function ViewCounter({ slug, className, blogPage = false }) {
 
   return (
     <span className={className}>{`${
-      // views > 0 ? views.toLocaleString() : Math.floor(Math.random() * 100)
-      Math.floor(Math.random() * 100)
+      // views > 0 ? views.toLocaleString() : 1
+      1
     }`}</span>
   );
 }

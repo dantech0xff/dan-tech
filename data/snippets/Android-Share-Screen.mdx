@@ -1,0 +1,78 @@
+---
+title: 'Android Share ScreenShot'
+date: '2022-11-20'
+tags: [Android, Kotlin]
+draft: false
+summary: 'Simple snippet code to share Android Screenshot'
+images: []
+layout: PostSimple
+---
+
+```xml showLineNumbers
+<!-- file_paths.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-cache-path
+        name="external_cache_files"
+        path="." />
+    <external-files-path
+        name="external_files_files"
+        path="." />
+    <external-path
+        name="external_files"
+        path="." />
+    <files-path name="files" path="."/>
+    <cache-path name="cache" path="."/>
+</paths>
+```
+
+```xml showLineNumbers
+<!-- AndroidManifest.xml -->
+<provider
+    android:name="androidx.core.content.FileProvider"
+    android:authorities="com.app.package.FILE_PROVIDER"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+</provider>
+```
+
+```Kotlin showLineNumbers
+private fun doShareScreenshot() {
+        try {
+            val outPath =
+                File(cacheRootPath.toString() + "/screenshot_" + System.currentTimeMillis() + ".jpeg")
+            val out = FileOutputStream(outPath)
+            requireView().apply {
+                // handle before generate bitmap
+            }.drawToBitmap().compress(Bitmap.CompressFormat.JPEG, 100, out).apply {
+                // handle after generate bitmap
+            }
+            out.flush()
+            out.close()
+
+            startActivity(
+                Intent.createChooser(
+                    ShareCompat.IntentBuilder(requireActivity())
+                        // .setType("*/*") unrem this line
+                        .setStream(
+                            FileProvider.getUriForFile(
+                                requireActivity(),
+                                "com.app.package.FILE_PROVIDER", outPath
+                            )
+                        )
+                        .setText(
+                            getString(R.string.down_load_to_share) + Utils.downloadUrl(
+                                requireContext()
+                            )
+                        )
+                        .intent, "Share for fun!"
+                )
+            )
+        } catch (e: Exception) {
+          Log.e(e)
+        }
+    }
+```
