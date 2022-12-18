@@ -18,12 +18,6 @@ export default function Footer() {
               Enjoy your {currentDayName()}!
             </Link>
           </div>
-          {`•`}
-          <div className="mx-1">
-            <Link href="/contact" className="link-underline">
-              Contact
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
