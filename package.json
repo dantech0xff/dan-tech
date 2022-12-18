@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
-    "esbuild": "^0.16.9",
+    "esbuild": "0.14.54",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "framer-motion": "^7.10.2",
@@ -22,10 +22,13 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-scroll-progress-bar": "^1.1.13",
+    "react-share": "^4.4.1",
+    "react-social-icons": "^5.15.0",
     "reading-time": "^1.5.0",
     "remark-footnotes": "^4.0.1",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
+    "typescript": "^4.9.4",
     "typewriter-effect": "^2.19.0",
     "use-sound": "^4.0.1"
   },
