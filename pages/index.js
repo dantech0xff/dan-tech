@@ -6,6 +6,7 @@ import { getAllFilesFrontMatter } from "../lib/mdx";
 import formatDate from "../lib/utils/formatDate";
 import ViewCounter from "./components/ViewCounter";
 import Tag from "./components/Tag";
+import { PageSEO } from "../lib/SEO";
 
 const MAX_DISPLAY = 5;
 export async function getStaticProps() {
@@ -17,6 +18,10 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
+      <PageSEO
+        title={siteMetadata.title}
+        description={siteMetadata.description}
+      />
       <div>
         <div className="mb-12 flex-col items-center gap-x-12 xl:flex-row">
           <div className="pt-10">
