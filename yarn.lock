@@ -101,7 +101,7 @@
 
 "@esbuild/darwin-arm64@0.16.9":
   version "0.16.9"
-  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.16.9.tgz"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-arm64/-/darwin-arm64-0.16.9.tgz#820c88738cd97621737abcd5f05400ae5e0c66e6"
   integrity sha512-d7D7/nrt4CxPul98lx4PXhyNZwTYtbdaHhOSdXlZuu5zZIznjqtMqLac8Bv+IuT6SVHiHUwrkL6ywD7mOgLW+A==
 
 "@esbuild/darwin-x64@0.16.9":
@@ -1158,7 +1158,7 @@ es-to-primitive@^1.2.1:
 
 esbuild@^0.16.9:
   version "0.16.9"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.16.9.tgz"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.16.9.tgz#01b6c3a6cbc072108253ac160a0734229bf8c921"
   integrity sha512-gkH83yHyijMSZcZFs1IWew342eMdFuWXmQo3zkDPTre25LIPBJsXryg02M3u8OpTwCJdBkdaQwqKkDLnAsAeLQ==
   optionalDependencies:
     "@esbuild/android-arm" "0.16.9"

@@ -4,8 +4,8 @@ import siteMetadata from "../data/siteMetadata";
 import Link from "next/link";
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import formatDate from "../lib/utils/formatDate";
-import ViewCounter from "./components/ViewCounter";
-import Tag from "./components/Tag";
+import ViewCounter from "../components/ViewCounter";
+import Tag from "../components/Tag";
 import { PageSEO } from "../lib/SEO";
 
 const MAX_DISPLAY = 5;

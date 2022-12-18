@@ -1,5 +1,5 @@
-import siteMetadata from "../../data/siteMetadata";
-import headerNavLinks from "../../data/headerNavLinks";
+import siteMetadata from "../data/siteMetadata";
+import headerNavLinks from "../data/headerNavLinks";
 import Link from "next/link";
 import SectionContainer from "./SectionContainer";
 import Footer from "./Footer";

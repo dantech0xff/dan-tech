@@ -1,6 +1,6 @@
-import { currentDayName } from "../../lib/utils/dateUtils";
+import { currentDayName } from "../lib/utils/dateUtils";
 import Link from "next/link";
-import siteMetadata from "../../data/siteMetadata";
+import siteMetadata from "../data/siteMetadata";
 
 export default function Footer() {
   return (

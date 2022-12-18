@@ -4,8 +4,8 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 import ProgressBar from "react-scroll-progress-bar";
-import ScrollTop from "./components/ScrollTop";
-import LayoutWrapper from "./components/LayoutWrapper";
+import ScrollTop from "../components/ScrollTop";
+import LayoutWrapper from "../components/LayoutWrapper";
 import siteMetadata from "../data/siteMetadata";
 
 NProgress.configure({ showSpinner: false });

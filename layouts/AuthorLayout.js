@@ -1,0 +1,164 @@
+import ImageWrapper from "../components/ImageWrapper";
+import { PageSEO } from "../lib/SEO";
+import LinkWrapper from "../components/LinkWrapper";
+import Experience from "../components/Experience";
+import experienceData from "../data/experienceData";
+import { AiOutlineTwitter } from "react-icons/ai";
+
+export default function AuthorLayout({ children, frontMatter }) {
+  const {
+    name,
+    avatar,
+    occupation,
+    company,
+    email,
+    twitter,
+    linkedin,
+    github,
+    text1,
+    text2,
+    text3,
+  } = frontMatter;
+
+  return (
+    <>
+      <PageSEO title={`About - ${name}`} description={`Software Guy`} />
+      <div className="">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5 md:pl-16">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            About Me
+          </h1>
+        </div>
+        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+          <div className="flex flex-col items-center space-x-2 pt-8 xl:sticky xl:top-0">
+            <ImageWrapper
+              src={avatar}
+              alt="avatar"
+              width="192px"
+              height="192px"
+              className="h-48 w-48 rounded-full xl:rounded-full"
+              placeholder="blur"
+              blurDataURL="/static/images/SVG-placeholder.png"
+            />
+            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+              {name}
+            </h3>
+            <div className="text-lg text-gray-800 dark:text-gray-200">
+              {occupation}
+            </div>
+            <div className="text-lg text-gray-800 dark:text-gray-200">
+              {company}
+            </div>
+            <div className="flex hidden flex-col pt-3">
+              <a
+                className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
+                href="https://twitter.com/real_debugger"
+                data-screen-name="@real_debugger"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineTwitter className="mr-2 mb-0.5 inline h-5 w-5" />
+                Say Hi!
+              </a>
+            </div>
+          </div>
+          <div className="prose max-w-none pt-8 pb-8 text-xl dark:prose-dark xl:col-span-2">
+            <p>
+              {text1}
+              <br />
+              {text2}
+            </p>
+            <p>
+              The motivation for this site is to share what I&apos;ve learned
+              from the world.
+            </p>
+
+            <p>
+              I am a strong supporter of open-source - especially blockchain!
+              I&apos;m always interested in working on new projects with new
+              technologies. Feel free to reach out if you have any ideas to
+              talk!
+            </p>
+            <p>Favorite coding language: Kotlin, JS, RUST, Python</p>
+            <p>
+              Reach me through{" "}
+              <LinkWrapper
+                href={"mailto:danhtran.dev@outlook.com"}
+                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+              >
+                Outlook
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="ml-0.5 inline-block h-4 w-4 fill-current"
+                >
+                  <g data-name="Layer 2">
+                    <g data-name="external-link">
+                      <rect width="24" height="24" opacity="0" />
+                      <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                      <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                    </g>
+                  </g>
+                </svg>
+              </LinkWrapper>{" "}
+              or{" "}
+              <LinkWrapper
+                href={
+                  "https://api.whatsapp.com/send?phone=84374268537&text=Hello, I'm from Dan Tech Blog.\n"
+                }
+                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+              >
+                Whatsapp
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="ml-0.5 inline-block h-4 w-4 fill-current"
+                >
+                  <g data-name="Layer 2">
+                    <g data-name="external-link">
+                      <rect width="24" height="24" opacity="0" />
+                      <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                      <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                    </g>
+                  </g>
+                </svg>
+              </LinkWrapper>
+            </p>
+            {/* <p>
+             <Link
+               href={'/uses'}
+               className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+             >
+               Here
+             </Link>{' '}
+             you can see what I use on daily basis
+           </p> */}
+          </div>
+        </div>
+        <div className="mt-10 md:pl-16">
+          <div className="space-y-2 pt-0 pb-0 md:space-y-5">
+            <h1 className="text3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              Work History
+            </h1>
+          </div>
+          <div className="max-w-none pt-8 pb-8 xl:col-span-2">
+            {experienceData.map((d) => (
+              <Experience
+                key={d.company}
+                title={d.title}
+                company={d.company}
+                location={d.location}
+                range={d.range}
+                url={d.url}
+                text1={d.text1}
+                text2={d.text2}
+                text3={d.text3}
+                text4={d.text4}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
