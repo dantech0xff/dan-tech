@@ -11,17 +11,17 @@ import siteMetadata from "../data/siteMetadata";
 NProgress.configure({ showSpinner: false });
 
 Router.onRouteChangeStart = () => {
-  // console.log('onRouteChangeStart triggered');
+  console.log("onRouteChangeStart triggered");
   NProgress.start();
 };
 
 Router.onRouteChangeComplete = () => {
-  // console.log('onRouteChangeComplete triggered');
+  console.log("onRouteChangeComplete triggered");
   NProgress.done();
 };
 
 Router.onRouteChangeError = () => {
-  // console.log('onRouteChangeError triggered');
+  console.log("onRouteChangeError triggered");
   NProgress.done();
 };
 
