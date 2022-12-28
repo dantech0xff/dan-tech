@@ -1,11 +1,13 @@
+import LinkWrapper from "../components/LinkWrapper";
 import Link from "next/link";
+import ImageWrapper from "../components/ImageWrapper";
+import Image from "next/image";
 import PageTitle from "../components/PageTitle";
 import SectionContainer from "../components/SectionContainer";
-import { BlogSEO } from "../lib/SEO";
-import ImageWrapper from "../components/ImageWrapper";
+import { BlogSEO, PageSEO, TagSEO } from "../lib/SEO";
 import ViewCounter from "../components/ViewCounter";
-import Tag from "../components/Tag";
 import siteMetadata from "../data/siteMetadata";
+import Tag from "../components/Tag";
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -17,6 +19,7 @@ import {
 import { SocialIcon } from "react-social-icons";
 import { HiOutlinePencil, HiOutlineClock, HiOutlineEye } from "react-icons/hi";
 import { BsCalendarDate } from "react-icons/bs";
+
 const editUrl = (fileName) =>
   `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
 const postDateTemplate = {
@@ -27,15 +30,22 @@ const postDateTemplate = {
 };
 
 export default function PostLayout({
+  children,
   frontMatter,
   authorDetails,
   next,
   prev,
-  children,
 }) {
   const { slug, fileName, date, title, images, tags, readingTime } =
     frontMatter;
   const postUrl = `${siteMetadata.siteUrl}/blog/${slug}`;
+  console.log({
+    children,
+    frontMatter,
+    authorDetails,
+    next,
+    prev,
+  });
   return (
     <SectionContainer>
       <BlogSEO
@@ -95,10 +105,10 @@ export default function PostLayout({
                       key={author.name}
                     >
                       {author.avatar && (
-                        <ImageWrapper
+                        <Image
                           src={author.avatar}
-                          width="38px"
-                          height="38px"
+                          width="38"
+                          height="38"
                           alt="avatar"
                           className="h-10 w-10 rounded-full"
                           placeholder="blur"
@@ -106,37 +116,62 @@ export default function PostLayout({
                         />
                       )}
                       <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">
-                          {author.name}
+                        <dd className="text-gray-900 dark:text-gray-100 pb-2">
+                          <LinkWrapper href="/about">{author.name}</LinkWrapper>
                         </dd>
-                        <dt className="sr-only">Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                            >
-                              {author.twitter.replace(
-                                "https://twitter.com/",
-                                "@"
-                              )}
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                className="ml-0.5 inline-block h-4 w-4 fill-current"
-                              >
-                                <g data-name="Layer 2">
-                                  <g data-name="external-link">
-                                    <rect width="24" height="24" opacity="0" />
-                                    <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
-                                    <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
-                                  </g>
-                                </g>
-                              </svg>
-                            </Link>
-                          )}
-                        </dd>
+                        <a
+                          className="pr-2"
+                          href={author.linkedin}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <SocialIcon
+                            network="linkedin"
+                            style={{ height: 24, width: 24 }}
+                            fgColor="#fff"
+                            bgColor="#0077b5"
+                          />
+                        </a>
+                        <a
+                          className="pr-2"
+                          href={author.twitter}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <SocialIcon
+                            network="twitter"
+                            style={{ height: 24, width: 24 }}
+                            fgColor="#fff"
+                            bgColor="#1da1f2"
+                          />
+                        </a>
+
+                        <a
+                          className="pr-2"
+                          href={author.github}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <SocialIcon
+                            network="github"
+                            style={{ height: 24, width: 24 }}
+                            fgColor="#fff"
+                            bgColor="#333"
+                          />
+                        </a>
+                        <a
+                          className="pr-2"
+                          href={author.facebook}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <SocialIcon
+                            network="facebook"
+                            style={{ height: 24, width: 24 }}
+                            fgColor="#fff"
+                            bgColor="#1877f2"
+                          />
+                        </a>
                       </dl>
                     </li>
                   ))}
@@ -250,7 +285,7 @@ export default function PostLayout({
                     </h2>
                     <div className="flex flex-wrap">
                       {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
+                        <Tag key={tag} text={tag}></Tag>
                       ))}
                     </div>
                   </div>
