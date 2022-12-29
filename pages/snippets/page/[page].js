@@ -1,7 +1,7 @@
 import { PageSEO } from "../../../lib/SEO";
 import siteMetadata from "../../../data/siteMetadata";
 import { getAllFilesFrontMatter } from "../../../lib/mdx";
-import SnippetsLayout from "../../../layouts/SimplestLayout";
+import SnippetsLayout from "../../../layouts/SnippetsLayout";
 import { POSTS_PER_PAGE } from "../../snippets";
 
 export async function getStaticPaths() {

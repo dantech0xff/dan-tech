@@ -1,6 +1,6 @@
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import siteMetadata from "../data/siteMetadata";
-import SnippetsLayout from "../layouts/SimplestLayout";
+import SnippetsLayout from "../layouts/SnippetsLayout";
 import { PageSEO } from "../lib/SEO";
 
 export const POSTS_PER_PAGE = 5;

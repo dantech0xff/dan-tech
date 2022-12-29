@@ -54,7 +54,7 @@ export default function Home({ posts }) {
                 <div className="group flex bg-transparent bg-opacity-20 px-2 transition duration-100 hover:scale-105 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800">
                   <article>
                     <a href={`/blog/${slug}`}>
-                      <div className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                      <div className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-300 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                         <dl>
                           <dt className="sr-only">Published on</dt>
                           <dd className="text-sm font-normal leading-6 text-gray-500 dark:text-gray-400">

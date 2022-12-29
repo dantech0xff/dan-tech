@@ -55,7 +55,7 @@ export default function SnippetsLayout({
             </svg>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-2">
           {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter;
@@ -63,12 +63,12 @@ export default function SnippetsLayout({
               <Link
                 key={slug}
                 href={`/snippets/${slug}`}
-                className="bg-day·dark:bg-night·group group relative flex transform cursor-pointer flex-wrap border border-gray-200 bg-opacity-50 p-px py-px transition duration-200 hover:scale-105 dark:border-gray-700 dark:bg-opacity-50"
+                className="transform overflow-hidden rounded-md border-2 border-solid border-gray-200 bg-transparent bg-opacity-20 transition duration-200 hover:scale-105 hover:rounded-md hover:border-primary-500 hover:bg-gray-300 dark:border-gray-700 dark:hover:border-primary-500 dark:hover:bg-gray-800 transition duration-200 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500"
               >
-                <div className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-primary-500 duration-200 group-hover:scale-x-100" />
+                {/* <div className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-primary-500 duration-200 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 h-full w-0.5 origin-bottom scale-y-0 transform bg-primary-500 duration-200 group-hover:scale-y-100" />
                 <div className="absolute top-0 left-0 h-0.5 w-full origin-right scale-x-0 transform bg-primary-500 duration-200 group-hover:scale-x-100" />
-                <div className="absolute bottom-0 right-0 h-full w-0.5 origin-top scale-y-0 transform bg-primary-500 duration-200 group-hover:scale-y-100" />
+                <div className="absolute bottom-0 right-0 h-full w-0.5 origin-top scale-y-0 transform bg-primary-500 duration-200 group-hover:scale-y-100" /> */}
                 <div className="bg-day dark:bg-night relative space-y-2 rounded-2xl p-4">
                   <article>
                     <div>

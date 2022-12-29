@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter();
-
+  const path = router.asPath;
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
@@ -17,7 +17,7 @@ const LayoutWrapper = ({ children }) => {
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="text-gray-900 dark:text-gray-100 flex items-center justify-between text-xl font-semibold">
-                {`~${router.asPath}`}{" "}
+                {`~${path}`}{" "}
                 <Typewriter
                   options={{
                     strings: [],

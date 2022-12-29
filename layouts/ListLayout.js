@@ -63,7 +63,7 @@ export default function ListLayout({
               <div
                 href={`/blog/${slug}`}
                 key={slug}
-                className="group flex bg-transparent bg-opacity-20 px-2 transition duration-100 hover:scale-105 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+                className="group flex bg-transparent bg-opacity-20 px-2 transition duration-200 hover:scale-105 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
               >
                 <li key={slug} className="py-6">
                   <article className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-3">
@@ -87,13 +87,14 @@ export default function ListLayout({
                             </Link>
                           </h2>
                         </div>
+
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                          {summary}
+                        </div>
                         <div className="flex flex-wrap">
                           {tags.map((tag) => (
                             <Tag key={tag} text={tag} />
                           ))}
-                        </div>
-                        <div className="prose max-w-none pt-5 text-gray-500 dark:text-gray-400">
-                          {summary}
                         </div>
                       </div>
                     </div>
