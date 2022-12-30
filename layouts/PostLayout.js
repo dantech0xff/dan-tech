@@ -77,9 +77,8 @@ export default function PostLayout({
                   {readingTime.text}
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <HiOutlineEye className="h-5 w-5" />
+                  {/* <HiOutlineEye className="h-5 w-5" /> */}
                   <ViewCounter className="ml-0" slug={slug} blogPage={true} />
-                  <div className="-ml-0.5">Views</div>
                 </span>
               </div>
             </div>
