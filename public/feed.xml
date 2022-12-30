@@ -7,47 +7,17 @@
       <language>en-us</language>
       <managingEditor>danhtran.dev@outlook.com (Dan Tech)</managingEditor>
       <webMaster>danhtran.dev@outlook.com (Dan Tech)</webMaster>
-      <lastBuildDate>Tue, 12 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 30 Dec 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://danhtran.dev/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://danhtran.dev/blog/spotify-refresh-token</guid>
-    <title>How to get the Spotify Refresh Token</title>
-    <link>https://danhtran.dev/blog/spotify-refresh-token</link>
-    <description>Getting the Spotify Refresh Token doesn&#39;t need to be a hassle any longer.</description>
-    <pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate>
+    <guid>https://danhtran.dev/blog/Dan-2022-Look-Back</guid>
+    <title>A look back to my 2022</title>
+    <link>https://danhtran.dev/blog/Dan-2022-Look-Back</link>
+    <description>How was your 2022? Let me tell you my story :)</description>
+    <pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate>
     <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>spotify</category><category>hacks</category>
-  </item>
-
-  <item>
-    <guid>https://danhtran.dev/blog/Apple-Privacy</guid>
-    <title>Apple doesn&#39;t care about privacy, and it&#39;s showing.</title>
-    <link>https://danhtran.dev/blog/Apple-Privacy</link>
-    <description>Apple announced that it would begin checking content uploaded to iCloud Photos, against a list of known CSAM material. This is fine on it&#39;s own, however the system could easily be abused.</description>
-    <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
-    <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>apple</category><category>tech</category><category>privacy</category>
-  </item>
-
-  <item>
-    <guid>https://danhtran.dev/blog/WWDC22</guid>
-    <title>WWDC 2022 Wishlist</title>
-    <link>https://danhtran.dev/blog/WWDC22</link>
-    <description>Even though I don&#39;t use any of their products myself, here&#39;s the features I hope Apple will announce.</description>
-    <pubDate>Sun, 05 Jun 2022 00:00:00 GMT</pubDate>
-    <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>tech</category><category>apple</category>
-  </item>
-
-  <item>
-    <guid>https://danhtran.dev/blog/Apple-Competition</guid>
-    <title>Apple and the case for competition.</title>
-    <link>https://danhtran.dev/blog/Apple-Competition</link>
-    <description>The EU announced plans to force all devices – including iPhones – to use a common charging port.</description>
-    <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
-    <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>apple</category><category>tech</category>
+    <category>dan</category><category>tech</category><category>better-me</category>
   </item>
 
     </channel>

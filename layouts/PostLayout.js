@@ -201,7 +201,7 @@ export default function PostLayout({
                       bgColor="#1877f2"
                     />
                   </FacebookShareButton>
-                  <EmailShareButton
+                  {/* <EmailShareButton
                     body={"Check out this blog"}
                     subject={title}
                     separator=" : "
@@ -214,7 +214,7 @@ export default function PostLayout({
                       fgColor="#fff"
                       bgColor="#B61AC1"
                     />
-                  </EmailShareButton>
+                  </EmailShareButton> */}
                   <LinkedinShareButton
                     summary={"Check out this blog"}
                     title={title}
@@ -229,7 +229,7 @@ export default function PostLayout({
                       bgColor="#0072b1"
                     />
                   </LinkedinShareButton>
-                  <RedditShareButton
+                  {/* <RedditShareButton
                     title={title}
                     url={postUrl}
                     className="flex items-center overflow-hidden rounded-full !bg-[#ff4500] hover:scale-110"
@@ -240,8 +240,8 @@ export default function PostLayout({
                       fgColor="#fff"
                       bgColor="#ff4500"
                     />
-                  </RedditShareButton>
-                  <WhatsappShareButton
+                  </RedditShareButton> */}
+                  {/* <WhatsappShareButton
                     title={title}
                     separator={" : "}
                     url={postUrl}
@@ -253,8 +253,8 @@ export default function PostLayout({
                       fgColor="#fff"
                       bgColor="#25D366"
                     />
-                  </WhatsappShareButton>
-                  <Link
+                  </WhatsappShareButton> */}
+                  {/* <Link
                     href={editUrl(fileName)}
                     className="flex items-center overflow-hidden rounded-full !bg-[#5A6272] hover:scale-110"
                   >
@@ -264,7 +264,7 @@ export default function PostLayout({
                       fgColor="#fff"
                       bgColor="#5A6272"
                     />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
