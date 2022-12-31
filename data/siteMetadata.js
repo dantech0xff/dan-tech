@@ -16,7 +16,7 @@ const siteMetadata = {
   theme: "system", // system, dark or light
   siteUrl: "https://danhtran.dev",
   siteRepo: "https://github.com/danhtran-dev",
-  siteLogo: "/static/images/logo.png",
+  siteLogo: "/static/images/code-never-lies.jpeg",
   image: "/static/images/avatar.png",
   socialBanner: "/static/images/twitter-card.png",
   email: "danhtran.dev@outlook.com",

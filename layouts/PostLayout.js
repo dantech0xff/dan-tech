@@ -44,6 +44,7 @@ export default function PostLayout({
       <BlogSEO
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
+        images={images}
         {...frontMatter}
       />
       <article>
