@@ -39,6 +39,7 @@ export default function PostLayout({
   const { slug, fileName, date, title, images, tags, readingTime } =
     frontMatter;
   const postUrl = `${siteMetadata.siteUrl}/blog/${slug}`;
+  console.log(frontMatter);
   return (
     <SectionContainer>
       <BlogSEO

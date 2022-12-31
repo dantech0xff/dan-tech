@@ -3,7 +3,7 @@ import siteMetadata from "../data/siteMetadata";
 import SnippetsLayout from "../layouts/SnippetsLayout";
 import { PageSEO } from "../lib/SEO";
 
-export const POSTS_PER_PAGE = 5;
+export const POSTS_PER_PAGE = 10;
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("snippets");
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE);
