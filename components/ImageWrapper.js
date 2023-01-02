@@ -5,6 +5,7 @@ const ImageWrapper = ({ ...rest }) => (
   <NextImage
     {...rest}
     placeholder="blur"
+    loading="lazy"
     blurDataURL="/static/images/SVG-placeholder.png"
   />
 );
