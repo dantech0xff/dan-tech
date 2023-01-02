@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "@vercel/analytics": "^0.1.6",
     "esbuild": "0.14.54",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",

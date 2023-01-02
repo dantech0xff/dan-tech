@@ -7,6 +7,7 @@ import ProgressBar from "react-scroll-progress-bar";
 import ScrollTop from "../components/ScrollTop";
 import LayoutWrapper from "../components/LayoutWrapper";
 import siteMetadata from "../data/siteMetadata";
+import { Analytics } from "@vercel/analytics/react";
 
 NProgress.configure({ showSpinner: false });
 
@@ -44,15 +45,18 @@ export default function App({
   pageProps: { session, ...pageProps },
 }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <ProgressBar bgcolor="#42A5F5"></ProgressBar>
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </Head>
-      <ScrollTop />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
-    </ThemeProvider>
+    <>
+      <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+        <ProgressBar bgcolor="#42A5F5"></ProgressBar>
+        <Head>
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </Head>
+        <ScrollTop />
+        <LayoutWrapper>
+          <Component {...pageProps} />
+        </LayoutWrapper>
+      </ThemeProvider>
+      <Analytics />
+    </>
   );
 }
