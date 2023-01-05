@@ -3,7 +3,7 @@ const siteMetadata = {
   author: "Dan Tech",
   headerTitle: "Software Guy",
   description:
-    "Welcome to Dan Tech's Blog! I'm a Software Guy who willing to debug legacy code ¯\\_(ツ)_/¯. " +
+    "I'm a Software Guy who willing to debug legacy code ¯\\_(ツ)_/¯. " +
     "This is my place for Code Sharing, Reflections, and LifeStyle.",
   welcomeText: "Welcome to Dan Tech's Blog!",
   selfIntroduction:
