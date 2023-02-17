@@ -1,0 +1,25 @@
+---
+title: Binary Search Tree  Inorder Traversal
+date: '2023-02-18'
+tags: [LeetCode, DSA, Binary Search Tree]
+draft: false
+summary: Snippet for Binary Search Tree Inorder Traversal
+images: []
+layout: PostSimple
+---
+
+## Binary Search Tree Inorder Traversal
+
+## Time Complexity O(N)
+
+### This approach is recursive, with O(N) time Complexity.
+### To print the values in the ascending order!
+
+```
+def inorder(root):
+    if not root:
+        return
+    inorder(root.left)
+    print(root.val)
+    inorder(root.right)
+```
