@@ -1,45 +1,36 @@
 const experienceData = [
-  {
-    title: "Senior Software Engineer",
-    company: "ShopBack Group",
-    location: "Viet Nam",
-    range: "March 2022 - Now",
-    url: "https://www.shopback.com",
-    text1:
-      "PIC of product Earn More on Android Platform. Contribute from the feature ideas, tech design to implementation, unit testing and release.",
-    text2:
-      "Collaborate with other Tech teams to contribute to technical decisions.",
-    text3:
-      "Tech skills: ViewBinding, DataBinding, MVVM, Clean Architecture, RxJava, Coroutines, SQLite, Unit Test.",
-  },
-  {
-    title: "Senior Software Engineer",
-    company: "Zalo Group",
-    location: "HCMC, Viet Nam",
-    range: "April 2018 - March 2022",
-    url: "https://zalo.me",
-    text1:
-      "Collaborate with Product Design to define & implement new features.",
-    text2:
-      "Restructure Zalo Message Database(for Mobile client) to help users store more messages on their phone, and keep the query still fast and light.",
-    text3:
-      "In charge of features: Mini Chat, Bubble Chat, Message Notification, Sticker, Voice, Photo, Drawing and GIF messages.",
-    text4: "Tech skills: MVP, MVC, Clean Architecture, SQLite, Unit Test",
-  },
-  {
-    title: "Software Engineer",
-    company: "XCT, YOMI Studio, VNG Corp",
-    location: "HCMC, Viet Nam",
-    range: "May 2016 - April 2018",
-    url: "",
-    text1:
-      "Implement new UI for game event. The game was published in Thai Lan (VNG Corp)",
-    text2:
-      "Build a new Puzzle Game (Brick Breaker game type) from scratch. The game was published in US (YOMI Studio)",
-    text3:
-      "Build new Card Game (Gamble game type) from scratch. The game was published in Viet Nam (XCT)",
-    text4: "Tech skills: C++, C#, Unit3D, Cocos2dx, MVC, Socket",
-  },
+    {
+        title: "Senior Software Engineer",
+        company: "ShopBack Group",
+        location: "Viet Nam",
+        range: "March 2022 - Now",
+        url: "https://www.shopback.com",
+        text1: "Served as the Person in charge of Earn More & Challenge product on the Android platform, actively contributing to feature ideation, technical design, implementation, and unit testing.",
+        text2: "Collaborated effectively with cross-functional technical teams, providing valuable input on critical technical decisions to drive product development and ensure high-quality outcomes.",
+        text3: "Utilized key technical skills, including: ViewBinding, DataBinding, MVVM, RxJava, Unit Testing, and Clean Architecture.",
+    },
+    {
+        title: "Senior Software Engineer",
+        company: "Zalo Group",
+        location: "HCMC, Viet Nam",
+        range: "April 2018 - March 2022",
+        url: "https://zalo.me",
+        text1: "Collaborated closely with Product Design to define and implement key features, ensuring seamless integration and functionality.",
+        text2: "Restructured Zalo Message Database for mobile clients to enable users to store more messages on their devices while maintaining fast and lightweight database query performance.",
+        text3: "Led the development of features such as Mini Chat, Bubble Chat, Message Notifications, and various message types including Stickers, Voice, Photos, Doodle Drawings, and GIFs.",
+        text4: "Employed essential technical skills, such as MVP, MVC, SQLite, C++, Unit Testing, and Clean Architecture, to deliver high-quality results and enhance the user experience.",
+    },
+    {
+        title: "Software Engineer",
+        company: "XCT, YOMI Studio, VNG Corp",
+        location: "HCMC, Viet Nam",
+        range: "May 2016 - April 2018",
+        url: "",
+        text1: "Implemented new UI for game events, leading to successful publication in Thailand through VNG Corp. ",
+        text2: "Developed a new Brick Breaker-type Puzzle Game from scratch, which was published in the US by YOMI Studio. ",
+        text3: "Created a new Gamble-type Card Game from scratch, resulting in publication in Vietnam by XCT. ",
+        text4: "Maintained existing codebase and addressed technical issues, ensuring optimal performance and functionality. ",
+    },
 ];
 
 export default experienceData;
