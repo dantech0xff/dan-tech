@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>danhtran.dev@outlook.com (Dan Tech)</managingEditor>
       <webMaster>danhtran.dev@outlook.com (Dan Tech)</webMaster>
-      <lastBuildDate>Mon, 06 Mar 2023 17:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 25 Jun 2023 17:00:00 GMT</lastBuildDate>
       <atom:link href="https://danhtran.dev/tags/tech/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://danhtran.dev/blog/struggle-of-software-engineer-in-low-in-come-country</guid>
+    <title>The Struggle of Software Engineers in Low-Income Countries</title>
+    <link>https://danhtran.dev/blog/struggle-of-software-engineer-in-low-in-come-country</link>
+    <description>Software engineering is a field that transcends geographical boundaries. The skills, expertise, and dedication required to excel in this profession are universal, regardless of where one practices it. However, the reality is that compensation in the tech industry can vary significantly across different regions, leading to stark disparities that are difficult to ignore.</description>
+    <pubDate>Sun, 25 Jun 2023 17:00:00 GMT</pubDate>
+    <author>danhtran.dev@outlook.com (Dan Tech)</author>
+    <category>dan</category><category>tech</category><category>better-me</category><category>musing</category>
+  </item>
+
   <item>
     <guid>https://danhtran.dev/blog/running-heals-my-life</guid>
     <title>Running heals my life - as a Software Engineer</title>

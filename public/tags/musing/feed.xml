@@ -8,7 +8,7 @@
       <managingEditor>danhtran.dev@outlook.com (Dan Tech)</managingEditor>
       <webMaster>danhtran.dev@outlook.com (Dan Tech)</webMaster>
       <lastBuildDate>Sun, 25 Jun 2023 17:00:00 GMT</lastBuildDate>
-      <atom:link href="https://danhtran.dev/tags/dan/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://danhtran.dev/tags/musing/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://danhtran.dev/blog/struggle-of-software-engineer-in-low-in-come-country</guid>
@@ -18,26 +18,6 @@
     <pubDate>Sun, 25 Jun 2023 17:00:00 GMT</pubDate>
     <author>danhtran.dev@outlook.com (Dan Tech)</author>
     <category>dan</category><category>tech</category><category>better-me</category><category>musing</category>
-  </item>
-
-  <item>
-    <guid>https://danhtran.dev/blog/running-heals-my-life</guid>
-    <title>Running heals my life - as a Software Engineer</title>
-    <link>https://danhtran.dev/blog/running-heals-my-life</link>
-    <description>Running has taught me the importance of self-care, allowing me to show up as my best self at work and in life. If you&#39;re feeling stressed or overwhelmed, I suggest you put on your shoes and go for a run. It might help improve your life.</description>
-    <pubDate>Mon, 06 Mar 2023 17:00:00 GMT</pubDate>
-    <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>dan</category><category>tech</category><category>better-me</category>
-  </item>
-
-  <item>
-    <guid>https://danhtran.dev/blog/dan-2022-a-look-back</guid>
-    <title>A look back to my 2022</title>
-    <link>https://danhtran.dev/blog/dan-2022-a-look-back</link>
-    <description>How was your 2022? Let me tell you my story :)</description>
-    <pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate>
-    <author>danhtran.dev@outlook.com (Dan Tech)</author>
-    <category>dan</category><category>tech</category><category>better-me</category>
   </item>
 
     </channel>
